@@ -1,10 +1,7 @@
 ![TampilanAplikasi](./img/present.png)
 
-# Digital Clock
+# 🕓 Digital Clock
 A minimalist and plain design digital clock website showing your current time and the timezone with light and dark theme.
-
-## Installation
-
 
 Technology used
 1. HTML

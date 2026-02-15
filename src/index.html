@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="relative min-h-dvh flex items-center justify-center bg-blue-50">
+
+    <button data-theme-mode="light" id="theme-button" class="absolute top-3 right-3 cursor-pointer hover:bg-black/3 active:bg-black/6 rounded-full p-2">
+        <i id="theme-icon" data-lucide="moon" class="size-[24px]"></i>
+    </button>
+
+    <main>
+        <div id="time-wrapper" class="mb-3 grid grid-cols-[160px_160px] grid-rows-[160px_160px] gap-3">
+            <div class="bg-white shadow-lg flex flex-col items-center justify-center text-center">
+                <h1 id="hours" class="text-7xl font-bold">00</h1>
+                <span class="font-medium text-lg">Hours</span>
+            </div>
+            <div class="bg-white shadow-lg flex flex-col items-center justify-center text-center">
+                <h1 id="minutes" class="text-7xl font-bold">00</h1>
+                <span class="font-medium text-lg">Minutes</span>
+            </div>
+            <div class="bg-white shadow-lg flex flex-col items-center justify-center text-center">
+                <h1 id="seconds" class="text-7xl font-bold">00</h1>
+                <span class="font-medium text-lg">Seconds</span>
+            </div>
+            <div class="bg-white shadow-lg flex flex-col items-center justify-center text-center">
+                <h1 id="status" class="text-7xl font-bold">PM</h1>
+            </div>
+        </div>
+        <p id="time-location" class="text-base text-center text-stone-700">Asia/Jakarta</p>
+    </main>
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script> 
+
+</body>
+
+</html>
